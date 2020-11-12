@@ -1,4 +1,5 @@
 import React from 'react';
+import '../stylesheets/Pokemon.scss';
 
 class Pokemon extends React.Component {
   render() {
@@ -11,7 +12,7 @@ class Pokemon extends React.Component {
      });
     return (
       <>
-        <div>
+        <div className = "pokeCards" >
           <img
             src={this.props.url}
             alt={this.props.name}

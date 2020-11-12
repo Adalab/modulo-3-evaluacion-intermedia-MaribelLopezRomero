@@ -1,0 +1,12 @@
+.itemCard {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    border-color: green, solid, 1 px;
+   
+};
+.listCards {
+    display: flex;
+    flex-direction: row;
+    border-color: green, solid, 1 px;
+}
