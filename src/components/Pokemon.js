@@ -2,6 +2,13 @@ import React from 'react';
 
 class Pokemon extends React.Component {
   render() {
+    const itemsType = this.props.type.map((types,i) => {
+       return (
+         <li key={i}>
+             {types}
+         </li>
+       );
+     });
     return (
       <>
         <div>
@@ -11,7 +18,7 @@ class Pokemon extends React.Component {
             title={this.props.itile}
           />
           <h2>{this.props.name}</h2>
-          <ul></ul>
+          <ul>{itemsType}</ul>
         </div>
       </>
     );

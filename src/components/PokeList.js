@@ -5,14 +5,15 @@ import Pokemon from './Pokemon';
 class PokeList extends React.Component {
   render() {
     const pokeCards = this.props.data;
-    pokeCards.map((card) => {
+   const itemsPokeCards = pokeCards.map((card) => {
       return (
         <li key={card.id}>
-          <Pokemon name={card.name} url={card.url} type={card.types} />
+      <Pokemon name={card.name} url={card.url} type={card.types} />
         </li>
       );
     });
-    return <ul>{pokeCards}</ul>;
+    console.log (pokeCards)
+     return <ul>{itemsPokeCards}</ul>;
   }
 }
 
