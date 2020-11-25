@@ -6,15 +6,17 @@ import PokeList from './PokeList';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    // this.state = {
-    //   data: {pokemons}
+    this.state = {
+      pokemons: pokemons,
+    };
   }
   render() {
+    const pokemonData = this.state.pokemons;
     return (
-      <>
-        <PokeList data={pokemons} />
-      </>
-    );
+    <main>
+    <PokeList data={pokemonData} />;
+    </main>
+    )
   }
 }
 
